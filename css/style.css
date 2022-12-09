@@ -48,7 +48,7 @@
 /* Clear List */
 .list { list-style: none; }
  
-/* Nav & Contacts */
+/* Nav, menu & Contacts */
 .menu-item,
 .contact-item {
     color: var(--color-dark); 
@@ -58,9 +58,14 @@
     font-size: var(--fs-nav); /* 16 */
     font-weight: 600;
 }
+.menu-item:hover { color: var(--color-text); }
+.menu-item:focus { color: var(--color-primary-brand); }
+.menu-item:active { color: var(--color-primary-brand); }
 .contact-item {
     font-size: var(--fs-contact); /* 16 */
 }
+.contact-item:active { color: var(--color-primary-brand); }
+.contact-item:focus { color: var(--color-primary-brand); }
 
 /* Title (h1, h2, h3) */
 .title { font-weight: 600; }
@@ -96,6 +101,8 @@
     font-size: var(--fs-btn);
     font-weight: 600;
     letter-spacing: 0.04em;
+    
+    cursor: pointer;
 }
 .btn-main {
     line-height: 1.2; /* 19 /16 = 1.2 */
