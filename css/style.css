@@ -13,24 +13,21 @@
     --fs-contact: 16px;
     --fs-btn: 16px;
     --fs-text: 16px;
-    --fs-title-main: 56px; /* h1 */
+    --fs-title-main: 56px;  /* h1 */
     --fs-title-block: 36px; /* h2 */
-    --fs-title-item: 20px; /* h3 */
+    --fs-title-item: 20px;  /* h3 */
 }
 
-* { 
+.body { 
     color: var(--color-text); 
+    background-color: var(--color-white);
     font-family: 'Roboto', sans-serif;
     font-size: var(--fs-text); /* 16px; */
     line-height: 1.5; /* 24 / 16 = 1.5 */    
-    font-weight: 400;
     letter-spacing: 0.02em;
 }
 
-.nav { 
-    color: var(--color-dark); 
-}
-
+/* Logo */
 .logo {
     font-family: 'Raleway', sans-serif;
     font-size: var(--fs-logo); /* 18px; */
@@ -48,10 +45,13 @@
 }
 .logo-web { color: var(--color-primary-brand); }
 
+/* Clear List */
 .list { list-style: none; }
  
+/* Nav & Contacts */
 .menu-item,
 .contact-item {
+    color: var(--color-dark); 
     text-decoration: none;    
 }
 .menu-item {
@@ -62,6 +62,7 @@
     font-size: var(--fs-contact); /* 16 */
 }
 
+/* Title (h1, h2, h3) */
 .title { font-weight: 600; }
 .title-main {
     font-size: var(--fs-title-main);
@@ -76,23 +77,16 @@
     line-height: 1.2;  /* 24 / 20 = 1.2 */
 }
 
-.center {
-    text-align: center;
-}
+/* Text Align */
+.center { text-align: center; }
 
-.dark { 
-    color: var(--color-dark); 
-}
-.white {
-    color: var(--color-white);
-}
-.bg-light {
-    background-color: var(--color-light);
-}
-.bg-dark {
-    background-color: var(--color-dark);
-}
+/* Colors */
+.dark { color: var(--color-dark); }
+.white { color: var(--color-white); }
+.bg-light { background-color: var(--color-light); }
+.bg-dark { background-color: var(--color-dark); }
 
+/* Buttons */
 .btn {
     background-color: var(--color-primary-brand);
     border: none;
@@ -110,6 +104,7 @@
     line-height: 1.5; /* 24 /16 = 1.5 */
 }
 
+/* Team-card block */
 .team-card-content {
     background-color: var(--color-white);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
@@ -118,15 +113,15 @@
     border-radius: 0px 0px 4px 4px;
 }
 
-
-.app-item {
+/* Gallery */
+.gallery-item {
     width: 360px;
     height: 300px;
     background-color: var(--color-primary-brand);
 }
-.app-link {
+.gallery-link {
     text-decoration: none;    
 }
-.app-item-text {
+.gallery-item-text {
     color: var(--color-white);  
 }
