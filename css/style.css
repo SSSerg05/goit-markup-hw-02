@@ -8,16 +8,36 @@
     --color-light: #f4f4fd;
     --color-white : #fff;
 
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    --fs-logo: 18px;
+    --fs-nav: 16px;
+    --fs-contact: 16px;
+    --fs-btn: 16px;
+    --fs-text: 16px;
+    --fs-title-main: 56px; /* h1 */
+    --fs-title-block: 36px; /* h2 */
+    --fs-title-item: 20px; /* h3 */
 }
 
-* { color: var(--color-text); }
+* { 
+    color: var(--color-text); 
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--fs-text); /* 16px; */
+    line-height: 1.5; /* 24 / 16 = 1.5 */    
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
 
 .nav { 
     color: var(--color-dark); 
 }
 
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: var(--fs-logo); /* 18px; */
+    font-weight: 800;
+    line-height: 1.3; /* 24 / 18 = 1.3 */
+    letter-spacing: 0.03em;
+}
 .logo-dark { 
     color: var(--color-dark); 
     text-decoration: none;
@@ -34,30 +54,62 @@
 .contact-item {
     text-decoration: none;    
 }
+.menu-item {
+    font-size: var(--fs-nav); /* 16 */
+    font-weight: 600;
+}
+.contact-item {
+    font-size: var(--fs-contact); /* 16 */
+}
 
-.presentation,
-.footer {
+.title { font-weight: 600; }
+.title-main {
+    font-size: var(--fs-title-main);
+    line-height: 1.07; /* 60 / 56 = 1.07 */
+}
+.title-block {
+    font-size: var(--fs-title-block);
+    line-height: 1.1; /* 40 / 36 = 1.1 */
+}
+.title-item {
+    font-size: var(--fs-title-item);
+    line-height: 1.2;  /* 24 / 20 = 1.2 */
+}
+
+.center {
+    text-align: center;
+}
+
+.dark { 
+    color: var(--color-dark); 
+}
+.white {
+    color: var(--color-white);
+}
+.bg-light {
+    background-color: var(--color-light);
+}
+.bg-dark {
     background-color: var(--color-dark);
 }
 
-.title {
-    color: var(--color-dark);
-}
-.title-main {
-    color: var(--color-white);
-}
-
 .btn {
-    color: var(--color-white);
     background-color: var(--color-primary-brand);
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+
+    font-size: var(--fs-btn);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+.btn-main {
+    line-height: 1.2; /* 19 /16 = 1.2 */
+}
+.btn-filter {
+    line-height: 1.5; /* 24 /16 = 1.5 */
 }
 
-.team {
-    background-color: var(--color-light);
-}
 .team-card-content {
     background-color: var(--color-white);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
@@ -65,6 +117,7 @@
         0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
+
 
 .app-item {
     width: 360px;
@@ -76,9 +129,4 @@
 }
 .app-item-text {
     color: var(--color-white);  
-}
-
-
-.footer-text { 
-    color: var(--color-white); 
 }
