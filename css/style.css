@@ -24,8 +24,6 @@
     background-color: var(--color-white);
     font-family: 'Roboto', sans-serif;
     font-size: var(--fs-text); /* 16px; */
-    line-height: 1.5; /* 24 / 16 = 1.5 */    
-    letter-spacing: 0.02em;
 }
 
 /* Logo */
@@ -84,6 +82,10 @@
 }
 
 /* Text Align */
+.text {
+    line-height: 1.5; /* 24 / 16 = 1.5 */    
+    letter-spacing: 0.02em;
+}
 .center { text-align: center; }
 
 /* Colors */
