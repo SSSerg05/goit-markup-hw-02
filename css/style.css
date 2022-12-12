@@ -23,7 +23,6 @@
     color: var(--color-text); 
     background-color: var(--color-white);
     font-family: 'Roboto', sans-serif;
-    font-size: var(--fs-text); /* 16px; */
 }
 
 /* Logo */
@@ -83,6 +82,7 @@
 
 /* Text Align */
 .text {
+    font-size: var(--fs-text); /* 16px; */
     line-height: 1.5; /* 24 / 16 = 1.5 */    
     letter-spacing: 0.02em;
 }
